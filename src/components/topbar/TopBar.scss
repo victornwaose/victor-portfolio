@@ -39,6 +39,47 @@
             }
         }
         }
+    .nav {
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 32px;
+            height: 25px;
+            cursor: pointer;
+        span {
+            width:100%;
+            height: 3px;
+            background-color: $mainColor;
+            transform-origin: left;
+            transition: all 1s ease;
+        }
+        }
+    } 
+    
+    }
+    &.active {
+        background-color: $mainColor;
+        color: white;
+        .hamburger {
+           span {
+            width:100%;
+            height: 3px;
+            background-color: $mainColor;
+            &:first-child{
+                background-color: white;
+                transform: rotate(45deg);
+            }
+            &:nth-child(2){
+                opacity: 0;
+            }
+            &:last-child{
+                background-color: white;
+                transform: rotate(- 45deg);
+            }
+        }
+
+        }
         
     }
 } 

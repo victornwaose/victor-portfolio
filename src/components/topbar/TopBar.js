@@ -1,13 +1,16 @@
 import React from "react";
-import Link from "react-router-dom";
 import { BsPersonFill } from "react-icons/bs";
 import { AiFillMail } from "react-icons/ai";
 
 import "./TopBar.scss";
 
-const TopBar = () => {
+const TopBar = ({ setMenuOpen, menuOpen }) => {
+    const handleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
     return (
-        <div className="topbar">
+        <div className={"topbar " + (menuOpen && "active")}>
             <div className="wrapper">
                 <div className="topbar__logo">
                     <a href="#intro" className="logo">
@@ -22,7 +25,13 @@ const TopBar = () => {
                         <span>nwaosevictor1234@gmail.com</span>
                     </div>
                 </div>
-                <div className=" nav"></div>
+                <div className="nav">
+                    <div className="hamburger" onClick={handleMenu}>
+                        <span className="line1"></span>
+                        <span className="line2"></span>
+                        <span className="line3"></span>
+                    </div>
+                </div>
             </div>
         </div>
     );
