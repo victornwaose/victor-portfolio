@@ -19,7 +19,7 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
                     <a href="#work"> Works</a>
                 </li>
                 <li onClick={handleMenu}>
-                    <a href="#intro"> Contact</a>
+                    <a href="#contact"> Contact</a>
                 </li>
             </ul>
         </div>
