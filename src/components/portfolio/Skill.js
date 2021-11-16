@@ -9,7 +9,7 @@ const Skill = () => {
 
     return (
         <div className="skill" id="skill">
-            <p>what I Do</p>
+            <p>What I Do</p>
             <h1>Specialized In</h1>
             <div className="barContainer">
                 {datas?.map((data) => (
