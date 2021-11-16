@@ -54,3 +54,42 @@ export const projects = [
         web: "https://frontendmentortipcal.netlify.app",
     },
 ];
+
+export const skills = [
+    {
+        id: 1,
+        SkillName: "HTML/CSS",
+        desc: "Experienced in HTML/CSS",
+        img: "/html.jpg",
+    },
+    {
+        id: 2,
+        SkillName: "JavaScript",
+        desc: "Experienced in JavaScript",
+        img: "/javascript.png",
+    },
+    {
+        id: 3,
+        SkillName: "React",
+        desc: "Experienced in React",
+        img: "/react.png",
+    },
+    {
+        id: 4,
+        SkillName: "Material-UI",
+        desc: "Experienced in Material-UI",
+        img: "/material-ui.png",
+    },
+    {
+        id: 5,
+        SkillName: "Tailwind",
+        desc: "Experienced in Tailwind",
+        img: "/tailwind.png",
+    },
+    {
+        id: 5,
+        SkillName: "SASS",
+        desc: "Experienced in SASS",
+        img: "/sass.png",
+    },
+];

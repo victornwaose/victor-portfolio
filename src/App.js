@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./App.scss";
 import TopBar from "./components/topbar/TopBar";
 import Intro from "./components/hero/Intro";
-import Portfolio from "./components/portfolio/Portfolio";
+import Skill from "./components/portfolio/Skill";
 import Work from "./components/work/Work";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
@@ -17,7 +17,7 @@ function App() {
             <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <div className="sections">
                 <Intro />
-                <Portfolio />
+                <Skill />
                 <Work />
                 <Contact />
             </div>

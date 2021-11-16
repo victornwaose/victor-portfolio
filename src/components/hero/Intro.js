@@ -30,12 +30,12 @@ const Intro = () => {
                         <span ref={textRef}></span>
                     </h3>
                 </div>
-                <a href="#protfolio">
+                 {/* <a href="#protfolio">
                     <RiArrowDropDownLine
                         className="dropIcon"
                         style={{ width: "200px", height: "50px" }}
                     />
-                </a>
+                </a> */}
             </div>
         </div>
     );

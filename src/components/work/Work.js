@@ -22,17 +22,18 @@ const Work = () => {
                 style={{ transform: `translateX(-${currentSlider * 100}vw)` }}
             >
                 {projects?.map((project) => (
-                    <div className="container">
-                        <h1>Projects</h1>
+                    <div
+                        className="container"
+                        style={{ height: "100%" }}
+                        key={project.title}
+                    >
                         <div className="item">
                             <div className="left">
                                 <div className="leftContainer">
                                     <FaMobile className="img" />
                                 </div>
                                 <h2>{project?.title}</h2>
-                                <p style={{ paddingLeft: "10px" }}>
-                                    {project?.desc}
-                                </p>
+                                <p>{project?.desc}</p>
                                 <span>{project?.Projects}</span>
 
                                 <div className="link">

@@ -29,13 +29,20 @@
             display: flex;
             align-items: center;
             margin-left: 29px;
+
             .icon {
                 font-size: 18px;
                 margin-right: 5px;
+                @include mobile{
+                    display: none;
+                }
             }
             span {
                 font-size: 15px;
                 font-weight: 400;
+                @include mobile{
+                    display: none;
+                }
             }
         }
         }

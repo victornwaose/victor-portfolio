@@ -13,7 +13,7 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
                     <a href="#intro"> Home</a>
                 </li>
                 <li onClick={handleMenu}>
-                    <a href="#portfolio"> Portfolio</a>
+                    <a href="#skil"> Portfolio</a>
                 </li>
                 <li onClick={handleMenu}>
                     <a href="#work"> Works</a>
